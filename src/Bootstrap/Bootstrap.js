@@ -1,4 +1,6 @@
 import React from "react";
+import {FiFacebook} from 'react-icons/fi'
+
 
 function App() {
   return (
@@ -7,24 +9,17 @@ function App() {
         <h2 className="text-center mt-3 mb-5 fs-4">Bootstrap Button Classes</h2>
         <div className="row">
           <div className="col py-3">
-            <a href="" className="btn btn-primary">
-              Submit
-            </a>
-            <a href="" className="btn btn-secondary">
-              Submit
-            </a>
-            <a href="" className="btn btn-success">
-              Submit
-            </a>
-            <button type="button" className="btn btn-warning">
-              Submit
-            </button>
-            <a href="" className="btn btn-outline-info">
-              Submit
-            </a>
-            <a href="" className="btn btn-outline-dark">
-              Submit
-            </a>
+            <div className="btn-group">
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -32,38 +27,201 @@ function App() {
         <h2 className="text-center mt-3 mb-5 fs-4">Bootstrap Button Classes</h2>
         <div className="row">
           <div className="col py-3">
-            <a href="" className="btn btn-primary btn-lg active">
-              Submit
-            </a>
-            <a href="" className="btn btn-secondary ">
-              Submit
-            </a>
-            <a href="" className="btn btn-success btn-sm">
-              Submit
-            </a>
-            <button type="button" className="btn btn-warning">
-              Submit
-            </button>
-            <a href="" className="btn btn-outline-info">
-              Submit
-            </a>
-            <a href="" className="btn btn-outline-dark">
-              Submit
-            </a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6 py-3">
-            <button className="btn btn-primary btn-lg btn-block">Submit</button>
-            <a href="" className="btn btn-primary active">
-              Submit
-            </a>{" "}
-            <a href="" className="btn disabled btn-secondary">
-              Submit
-            </a>
+            <div className="btn-group">
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-success" type="button">
+                Click
+              </button>
+              <button className="btn btn-danger" type="button">
+                Click
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      <div className="container mb-4">
+        <h2 className="text-center mt-3 mb-5 fs-4">
+          Bootstrap Button Classes Sizes
+        </h2>
+        <div className="row">
+          <div className="col py-3">
+            <div className="btn-group-lg">
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-success" type="button">
+                Click
+              </button>
+              <button className="btn btn-danger" type="button">
+                Click
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mb-4">
+        <h2 className="text-center mt-3 mb-5 fs-4">
+          Bootstrap Button Classes Small
+        </h2>
+        <div className="row">
+          <div className="col py-3">
+            <div className="btn-group-sm">
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-success" type="button">
+                Click
+              </button>
+              <button className="btn btn-danger" type="button">
+                Click
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mb-4">
+        <h2 className="text-center mt-3 mb-5 fs-4">
+          Bootstrap Button Classes Normal Size
+        </h2>
+        <div className="row">
+          <div className="col py-3">
+            <div className="btn-group">
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-success" type="button">
+                Click
+              </button>
+              <button className="btn btn-danger" type="button">
+                Click
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mb-4">
+        <h2 className="text-center mt-3 mb-5 fs-4">Bootstrap Button Toolbar</h2>
+        <div className="row">
+          <div className="col py-3">
+            <div className="btn-group-vertical">
+              <button className="btn btn-primary" type="button">
+                Click
+              </button>
+              <button className="btn btn-success" type="button">
+                Click
+              </button>
+              <button className="btn btn-danger" type="button">
+                Click
+              </button>
+              <button className="btn btn-info" type="button">
+                Click
+              </button>
+              <button className="btn btn-warning" type="button">
+                Click
+              </button>
+              <button className="btn btn-light" type="button">
+                Click
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mb-4">
+        <h2 className="text-center mt-3 mb-5 fs-4">
+          Bootstrap Button Toolbar Font-awesome Icon
+        </h2>
+        <div className="row">
+          <div className="col py-3">
+            <div className="btn-toolbar">
+              <div className="btn-group me-3">
+                <button className="btn btn-primary" type="button">
+                  Click
+                </button>
+                <button className="btn btn-success" type="button">
+                  Click
+                </button>
+                <button className="btn btn-danger" type="button">
+                  Click
+                </button>
+                <button className="btn btn-info" type="button">
+                  Click
+                </button>
+                <button className="btn btn-warning" type="button">
+                  Click
+                </button>
+                <button className="btn btn-light" type="button">
+                  Click
+                </button>
+              </div>
+              <div className="btn-group">
+                <button className="btn btn-primary" type="button">
+                  Click
+                </button>
+                <button className="btn btn-success" type="button">
+                  Click
+                </button>
+                <button className="btn btn-danger" type="button">
+                  Click
+                </button>
+                <button className="btn btn-info" type="button">
+                  Click
+                </button>
+                <button className="btn btn-warning" type="button">
+                  Click
+                </button>
+                <button className="btn btn-light" type="button">
+                  Click
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mb-4">
+        <h2 className="text-center mt-3 mb-5 fs-4">Bootstrap Button Toolbar</h2>
+        <div className="row">
+          <div className="col py-3">
+              <div className="btn-group">
+                <button className="btn btn-primary" type="button">
+                  Click
+                </button>
+                <button className="btn btn-success" type="button">
+                  Click
+                </button>
+              <div className="btn-group">
+                <a href="" className="btn btn-danger dropdown-toggle" data-toggle="dropdown">Click</a>
+                <div className="dropdown-menu">
+                  <a href="" className="dropdown-item">Web Design</a>
+                  <a href="" className="dropdown-item">Web Development</a>
+                </div>
+            </div>
+              </div>
+              <div className="btn-group">
+                <button className="btn btn-primary" type="button">
+                  <FiFacebook />
+                </button>
+                <button className="btn btn-success" type="button">
+                  <FiFacebook />
+                </button>
+                <button className="btn btn-danger" type="button">
+                  <FiFacebook />
+                </button>
+                <button className="btn btn-info" type="button">
+                  <FiFacebook />
+                </button>
+                <button className="btn btn-warning" type="button">
+                  <FiFacebook />
+                </button>
+                <button className="btn btn-light" type="button">
+                  <FiFacebook />
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+
     </>
   );
 }
