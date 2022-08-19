@@ -3,743 +3,192 @@ import React from "react";
 function App() {
   return (
     <>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            container
+      <div className="container mb-4">
+        <h2 className="py-3 text-center">Bootstrap 4 form Classes</h2>
+        <div className="row py-3">
+          <div className="col-md-6">
+            <div className="form-group">
+              <label>Name</label>
+              <input type="text" className="form-control" />
+            </div>
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="text"
+                value="abc@gmail.com"
+                className="form-control-plaintext"
+                readonly
+              />
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input type="password" className="form-control" />
+              <small className="form-text text-muted">
+                Your Password must be 8-20 characters
+              </small>
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input type="password" className="form-control" />
+            </div>
+            <div className="form-group">
+              <label>Country</label>
+              <select name="" id="" className="form-control">
+                <option value="">India</option>
+                <option value="">Pakisthan</option>
+                <option value="">Bangladesh</option>
+                <option value="">Nepal</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label>Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                className="form-control"
+              ></textarea>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="container mb-4">Hello Everyone</div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            container-lg
-          </div>
-        </div>
-      </div>
-      <div className="container-lg mb-4">Hello Everyone</div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            Gutters
-          </div>
+          <div className="col-md-6"></div>
         </div>
       </div>
       <div className="container mb-4">
-        <div className="row">
+        <h2 className="py-3 text-center">Bootstrap 4 Input Sizes</h2>
+        <div className="row py-3">
           <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
+            <div className="form-group">
+              <label>Name</label>
+              <input type="text" className="form-control form-control-lg" />
+            </div>
+            <div className="form-group">
+              <label>Name</label>
+              <input type="text" className="form-control form-control-sm" />
+            </div>
+            <div className="form-group">
+              <label>Name</label>
+              <input
+                type="text"
+                className="form-control form-control-default"
+              />
+            </div>
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="text"
+                value="abc@gmail.com"
+                className="form-control-plaintext"
+                readonly
+              />
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input type="password" className="form-control" />
+              <small className="form-text text-muted">
+                Your Password must be 8-20 characters
+              </small>
+            </div>
+            <div className="form-group">
+              <label>Country</label>
+              <input type="password" className="form-control" />
+            </div>
+            <div className="form-group">
+              <label>Country</label>
+              <select name="" id="" className="form-control">
+                <option value="">India</option>
+                <option value="">Pakisthan</option>
+                <option value="">Bangladesh</option>
+                <option value="">Nepal</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label>Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                className="form-control"
+              ></textarea>
             </div>
           </div>
           <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
+            <div className="form-group">
+              <label htmlFor="formFile" className="form-label">
+                Default file input example
+              </label>
+              <input className="form-control" type="file" id="formFile" />
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            gx-5
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row gx-5">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
+            <div className="form-group">
+              <label htmlFor="customRange1" className="form-label">
+                Example range
+              </label>
+              <input type="range" className="form-range" id="customRange1" />
             </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
+            <div className="form-group">
+              <label htmlFor="customRange1" className="form-label">
+                Hobbies
+              </label>
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="sportCheck"
+                />
+                <label htmlFor="sportCheck" className="form-check-label">
+                  Sports
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="bookCheck"
+                />
+                <label htmlFor="bookCheck" className="form-check-label">
+                  Books
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="bookCheck"
+                  disabled
+                />
+                <label htmlFor="bookCheck" className="form-check-label">
+                  Books
+                </label>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            gx-0
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row gx-0">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
+            <div className="form-group">
+              <label htmlFor="customRange1" className="form-label">
+                Gender
+              </label>
+              <div className="form-check">
+                <input
+                  type="radio"
+                  className="form-check-input"
+                  id="maleRadio"
+                  name="gender"
+                />
+                <label htmlFor="maleRadio" className="form-check-label">
+                  Male
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  type="radio"
+                  className="form-check-input"
+                  id="femaleRadio"
+                  name="gender"
+                />
+                <label htmlFor="checkbox" className="form-check-label">
+                  Female
+                </label>
+              </div>
             </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            gx-1
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row gx-1">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            gy-5"
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row gy-5">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            gy-5 gx-5
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row gy-5 gx-5">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            gy-5 gx-5
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row gy-5 gx-5">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            g-3
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row g-3">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            g-lg-4
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row g-lg-4">
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            lh-sm lh-lg
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="bg-info text-white lh-sm">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger text-white lh-lg">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            lh-base lh-1
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="bg-info text-white lh-base">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger text-white lh-1">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-info">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-danger">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                fugit molestiae ratione expedita vero, nemo doloremque? Libero,
-                quidem amet corporis inventore ad, nostrum tempore ratione modi
-                ea blanditiis porro debitis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row ">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            Bootstrap Table with border and padding
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row py-5">
-          <div className="col-md-6 mx-auto">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row ">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            Bootstrap Table with border Color
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row py-5">
-          <div className="col-md-6 mx-auto">
-            <table class="table table-bordered border-primary">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>@fat</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row ">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            Bootstrap Table
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row py-5">
-          <div className="col-md-6 mx-auto">
-            <table class="table table-bordered border-primary">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row ">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            Bootstrap Table Align align-middle align-bottom
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row py-5">
-          <div className="col-md-6 mx-auto">
-            <table class="table table-bordered border-primary">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-                <tr className="align-middle">
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-                <tr className="align-bottom">
-                  <th scope="row">3</th>
-                  <td>Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-1">
-        <div className="row ">
-          <div className="col-12 bg-dark text-white text-center fs-6 py-2">
-            align-baseline align-top
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <div className="row py-5">
-          <div className="col-md-6 mx-auto">
-            <table class="table table-bordered border-primary">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-                <tr className="align-baseline">
-                  <th scope="row">2</th>
-                  <td>
-                    <h3>Jacob</h3>
-                  </td>
-                  <td>Thornton</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-                <tr className="align-top">
-                  <th scope="row">3</th>
-                  <td>Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda et enim ad esse, eius debitis.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
