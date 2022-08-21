@@ -5,3 +5,13 @@
 .pink{
     background-color: pink;
 }
+
+.accordion .btn{
+    background-color: green !important;
+    color: white;
+}
+
+.accordion .btn.collapsed{
+    background-color: red !important;
+    color: white;
+}

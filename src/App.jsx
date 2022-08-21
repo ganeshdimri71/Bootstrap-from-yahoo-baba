@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Bootstrap from "./Bootstrap/Bootstrap";
 
 function App() {
@@ -20,25 +20,17 @@ function App() {
   //   });
 
   // });
-  $(function () {
-    $("#showBtn").click(function () {
-      $("#myModal").modal("show");
+  useEffect(() => {
+    console.log('hello')
+    $(function () {
+      $("#newBtn").click(function () {
+        $("#newCollapse").collapse("toggle");
+      });
+      $("#closeBtn").click(function () {
+        $("#newCollapse").collapse("hide");
+      });
     });
-    $("#closeModal").click(function () {
-      $("#myModal").modal("hide");
-    });
-    $("#myModal").on("shown.bs.modal", function () {
-      alert(`Shown`);
-    });
-    $("#myModal").on("show.bs.modal", function () {
-      alert(`Show`);
-    });
-    $("#myModal").on("hide.bs.modal", function () {
-      alert(`Hide`);
-    $("#myModal").on("hidePrevented.bs.modal", function () {
-      alert(`Hide`);
-    });
-  });
+  },[]);
 
   return <Bootstrap />;
 }
