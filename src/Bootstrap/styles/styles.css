@@ -5,21 +5,3 @@
 .pink{
     background-color: pink;
 }
-
-.nav{
-background-color: darkcyan;
-}
-
-.nav-link{
-    color: #fff !important;
-}
-
-.nav-link:hover,
-.nav-link.active{
-    color: #fff !important;
-    background-color: sandybrown !important;
-}
-
-.active{
-
-}
