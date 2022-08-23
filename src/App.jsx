@@ -21,7 +21,7 @@ function App() {
 
   // });
   useEffect(() => {
-    console.log('hello')
+    console.log("hello");
     $(function () {
       $("#newBtn").click(function () {
         $("#newCollapse").collapse("toggle");
@@ -30,7 +30,49 @@ function App() {
         $("#newCollapse").collapse("hide");
       });
     });
-  },[]);
+    $(function () {
+      $("#myTab a").on("click", function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+      });
+    });
+    $(function () {
+      $(".carousel").carousel({
+        // interval: 2000,
+        wrap: false,
+      });
+
+      $("#nextBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel("next");
+      });
+
+      $("#prevBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel("prev");
+      });
+      $("#prevBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel("pause");
+      });
+      $("#prevBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel("cycle");
+      });
+      $("#oneBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel(0);
+      });
+      $("#twoBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel(1);
+      });
+      $("#threeBtn").click(function () {
+        $("#carouselExampleSlidesOnly").carousel(2);
+      });
+
+      $("#carouselExampleSlidesOnly").on("slide.cs.carousel", function () {
+        console.log("one");
+      });
+      $("#carouselExampleSlidesOnly").on("slide.cs.carousel", function () {
+        console.log("one");
+      });
+    });
+  }, []);
 
   return <Bootstrap />;
 }

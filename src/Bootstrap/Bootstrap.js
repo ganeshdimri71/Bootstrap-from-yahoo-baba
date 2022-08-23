@@ -4,135 +4,118 @@ function Bootstrap() {
   return (
     <>
       <div className="container mb-4">
-        <h2 className="py-3 text-center">Bootstrap Modal</h2>
+        <h2 className="py-3 text-center">Bootstrap Tabs</h2>
         <div className="row py-3 justify-content-center">
-          <div className="col-md-7">
-            <button
-              className="btn btn-primary mb-2"
-              data-bs-toggle="collapse"
-              data-bs-target=".multi-collapse"
+          <div className="col">
+            <div
+              id="carouselExampleSlidesOnly"
+              className="carousel slide carousel-fade mb-3"
+              data-bs-ride="carousel"
             >
-              Click
-            </button>
-            <a
-              href=""
-              className="btn btn-success"
-              data-bs-toggle="collapse"
-              data-bs-target=".multi-collapse"
-            >
-              Anchor Click
-            </a>
-            <div className="collapse multi-collapse mb-2">
-              <div className="card card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                alias veniam est laudantium facilis! Temporibus tempora expedita
-                nihil atque maxime.
-              </div>
-            </div>
-            <div className="collapse multi-collapse">
-              <div className="card card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                alias veniam est laudantium facilis! Temporibus tempora expedita
-                nihil atque maxime.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <h2 className="py-3 text-center">Bootstrap Accordian</h2>
-        <div className="row py-3 justify-content-center">
-          <div className="col-md-7">
-            <div className="accordion" id="accordianExample">
-              <div className="card">
-                <div className="card-header">
+              <div className="carousel-inner">
+                <div class="carousel-indicators">
                   <button
-                    className="btn col-12 btn-link text-start mb-2"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                  >
-                    Heading Number One
-                  </button>
+                    type="button"
+                    data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
-                <div
-                  id="collapseOne"
-                  className="collapse show mb-2"
-                  data-bs-parent="#accordianExample"
-                >
-                  <div className="card-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat alias veniam est laudantium facilis! Temporibus
-                    tempora expedita nihil atque maxime.
+                <div className="carousel-item active" data-bs-interval="2000">
+                  <img
+                    className="d-block w-100"
+                    src="https://images.unsplash.com/photo-1593642532454-e138e28a63f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                    alt="carousel-image"
+                  />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>First Slide Label</h5>
+                    <p style={{ background: "white", color: "black" }}>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Voluptates est ullam consequatur!
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="2000">
+                  <img
+                    className="d-block w-100"
+                    src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                    alt="carousel-image"
+                  />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>First Slide Label</h5>
+                    <p style={{ background: "white", color: "black" }}>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Voluptates est ullam consequatur!
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="2000">
+                  <img
+                    className="d-block w-100"
+                    src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+                    alt="carousel-image"
+                  />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>First Slide Label</h5>
+                    <p style={{ background: "white", color: "black" }}>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Voluptates est ullam consequatur!
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="card">
-                <div className="card-header">
-                  <button
-                    className="btn col-12  btn-link text-start mb-2 collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                  >
-                    Heading Number Two
-                  </button>
-                </div>
-                <div
-                  id="collapseTwo"
-                  className="collapse mb-2"
-                  data-bs-parent="#accordianExample"
-                >
-                  <div className="card-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat alias veniam est laudantium facilis! Temporibus
-                    tempora expedita nihil atque maxime.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header">
-                  <button
-                    className="btn btn-block col-12  text-start collapsed mb-2"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                  >
-                    Heading Number Two
-                  </button>
-                </div>
-                <div
-                  id="collapseThree"
-                  className="collapse mb-2"
-                  data-bs-parent="#accordianExample"
-                >
-                  <div className="card-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat alias veniam est laudantium facilis! Temporibus
-                    tempora expedita nihil atque maxime.
-                  </div>
-                </div>
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <div id="prevBtn">Prev</div>
+            <div id="nextBtn">Next</div>
+            <div id="pauseBtn">Pause</div>
+            <div id="cycleBtn">Cycle</div>
+            <button id="oneBtn">1</button>
+            <button id="twoBtn">2</button>
+            <button id="threeBtn">3</button>
           </div>
-        </div>
-      </div>
-      <div className="container mb-4">
-        <h2 className="py-3 text-center">Bootstrap Modal</h2>
-        <div className="row py-3 justify-content-center">
-          <div className="col-md-7 py-3">
-            <button id='newBtn' className="btn btn-primary mb-2">Open</button>
-            <button id='closeBtn' className="btn btn-primary mb-2">Close</button>
-            <div id='newCollapse' className="collapse">
-              <div className="card card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                alias veniam est laudantium facilis! Temporibus tempora expedita
-                nihil atque maxime.
-              </div>
-            </div>
-          </div>
-     
         </div>
       </div>
     </>
   );
 }
+
 
 export default Bootstrap;

@@ -15,3 +15,9 @@
     background-color: red !important;
     color: white;
 }
+
+.carousel-caption>h5,
+carousel-caption>p{
+    color: black !important;
+    background-color: white !important;
+}
