@@ -72,6 +72,21 @@ function App() {
         console.log("one");
       });
     });
+    $(function () {
+      $(".toast").toast({
+        delay: 3000,
+        autohide: false,
+        animation:false
+      });
+    });
+    $(function () {
+      $("#showBtn").click(function () {
+        $("#myToast").toast("show");
+      });
+      $("#closeBtn").click(function () {
+        $("#myToast").toast("hide");
+      });
+    });
   }, []);
 
   return <Bootstrap />;
