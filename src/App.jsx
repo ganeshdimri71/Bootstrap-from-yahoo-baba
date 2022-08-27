@@ -76,7 +76,7 @@ function App() {
       $(".toast").toast({
         delay: 3000,
         autohide: false,
-        animation:false
+        animation: false,
       });
     });
     $(function () {
@@ -86,6 +86,16 @@ function App() {
       $("#closeBtn").click(function () {
         $("#myToast").toast("hide");
       });
+    });
+    $(function () {
+      $("body").scrollspy({
+        target: "#myNavbar",
+        offset: 50
+      });
+
+       $("body").each(function(){
+         $(this).scrollspy('refresh')
+       });
     });
   }, []);
 

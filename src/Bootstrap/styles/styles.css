@@ -1,23 +1,68 @@
-.container,.container-lg{
-    border: 5px solid black;
+body {
+  position: relative;
 }
 
-.pink{
-    background-color: pink;
+.container,
+.container-lg {
+  border: 5px solid black;
 }
 
-.accordion .btn{
-    background-color: green !important;
-    color: white;
+.pink {
+  background-color: pink;
 }
 
-.accordion .btn.collapsed{
-    background-color: red !important;
-    color: white;
+.accordion .btn {
+  background-color: green !important;
+  color: white;
 }
 
-.carousel-caption>h5,
-carousel-caption>p{
-    color: black !important;
-    background-color: white !important;
+.accordion .btn.collapsed {
+  background-color: red !important;
+  color: white;
+}
+
+.carousel-caption > h5,
+carousel-caption > p {
+  color: black !important;
+  background-color: white !important;
+}
+
+#section1 {
+  padding-top: 60px;
+  height: 500px;
+  color: #fff;
+  background-color: #1e88e5;
+}
+
+#section2 {
+  padding-top: 60px;
+  height: 500px;
+  color: #fff;
+  background-color: #673ab7;
+}
+
+#section3 {
+  padding-top: 60px;
+  height: 500px;
+  color: #fff;
+  background-color: #ff9800;
+}
+
+#section4 {
+  padding-top: 60px;
+  height: 500px;
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+#section5 {
+  padding-top: 60px;
+  height: 500px;
+  color: #fff;
+  background-color: #009688;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  background-color: black !important;
 }
