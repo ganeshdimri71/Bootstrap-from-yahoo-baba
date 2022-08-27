@@ -90,12 +90,17 @@ function App() {
     $(function () {
       $("body").scrollspy({
         target: "#myNavbar",
-        offset: 50
+        offset: 50,
       });
 
-       $("body").each(function(){
-         $(this).scrollspy('refresh')
-       });
+      $("body").each(function () {
+        $(this).scrollspy("refresh");
+      });
+    });
+    $(function () {
+      $("#test").on("activate.bs.scrollspy", () => {
+        $('#test').css({'background-color':'pink'})
+      });
     });
   }, []);
 
